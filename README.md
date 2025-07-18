@@ -1,1 +1,1 @@
-# ChronoNote---Note-taking-App
+# ChronoNote-NoteTakingApp
