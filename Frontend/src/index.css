@@ -1,0 +1,128 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  /* LightTheme */
+  --background-color: #f8f9fa;
+  --text-color: #343a40; 
+  --card-background: #ffffff; 
+  --navbar-background: #ffffff; 
+  --border-color: #e0e0e0; 
+  --primary-color: #007bff;
+  --secondary-text-color: #6c757d;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root.dark-theme {
+  /* DarkTheme */
+  --background-color: #1a1a1a; 
+  --text-color: #ffffff; 
+  --card-background: #2c2c2c; 
+  --navbar-background: #222222; 
+  --border-color: #666666; 
+  --primary-color: #66b3ff;
+  --secondary-text-color: #cccccc;
+}
+
+html, body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--text-color);
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 0.95em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+button:hover {
+  border-color: #0056b3;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  opacity: 0.9;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.SerachInput {
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  outline: none;
+  background-color: var(--card-background);
+  color: var(--text-color);
+  padding: 0.8em 1.2em;
+  height: calc(2.8em + 2px);
+}
+.SerachInput:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.form-select {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  border-color: var(--border-color);
+  padding: 0.8em 1.2em;
+  height: calc(2.8em + 2px);
+}
+.form-select option {
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+.card {
+  background-color: var(--card-background) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color);
+}
+
+.card.note-card {
+  background-color: var(--card-background) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color);
+}
+
+.card-title {
+  color: var(--text-color);
+}
+
+.card-text {
+  color: var(--secondary-text-color);
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.text-secondary {
+  color: var(--secondary-text-color) !important;
+}
+
+.border-end {
+  border-color: var(--border-color) !important;
+}
